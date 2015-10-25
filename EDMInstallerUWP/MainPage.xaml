@@ -7,7 +7,40 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10,7,10,13" UseLayoutRounding="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64" MinWidth="64" MaxWidth="64"/>
+            <ColumnDefinition Width="64" MinWidth="64" MaxWidth="64"/>
+            <ColumnDefinition MinWidth="64" Width="64" MaxWidth="64"/>
+            <ColumnDefinition MinWidth="64" Width="64" MaxWidth="64"/>
+            <ColumnDefinition MinWidth="64" Width="64" MaxWidth="64"/>
+            <ColumnDefinition MinWidth="64" Width="64" MaxWidth="64"/>
+            <ColumnDefinition MinWidth="64" Width="64" MaxWidth="64"/>
+            <ColumnDefinition Width="64" MinWidth="64" MaxWidth="64"/>
+            <ColumnDefinition Width="64" MinWidth="64" MaxWidth="64"/>
+            <ColumnDefinition MinWidth="64" Width="64" MaxWidth="64"/>
+            <ColumnDefinition MinWidth="64" Width="64" MaxWidth="64"/>
+            <ColumnDefinition MinWidth="64" Width="64" MaxWidth="64"/>
+            <ColumnDefinition MinWidth="64" Width="64" MaxWidth="64"/>
+            <ColumnDefinition MinWidth="64" Width="64" MaxWidth="64"/>
+            <ColumnDefinition Width="64" MinWidth="64" MaxWidth="64"/>
+            <ColumnDefinition Width="64" MinWidth="64" MaxWidth="64"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64" MinHeight="64" MaxHeight="64"/>
+            <RowDefinition Height="64" MinHeight="64" MaxHeight="64"/>
+            <RowDefinition Height="64" MinHeight="64" MaxHeight="64"/>
+            <RowDefinition Height="64" MinHeight="64" MaxHeight="64"/>
+            <RowDefinition Height="64" MinHeight="64" MaxHeight="64"/>
+            <RowDefinition Height="64" MinHeight="64" MaxHeight="64"/>
+            <RowDefinition Height="64" MinHeight="64" MaxHeight="64"/>
+            <RowDefinition Height="64" MinHeight="64" MaxHeight="64"/>
+            <RowDefinition Height="64" MinHeight="64" MaxHeight="64"/>
+            <RowDefinition Height="64" MinHeight="64" MaxHeight="64"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Install" Content="Install Mod" Grid.Row="8" Grid.Column="5" MinWidth="128" MinHeight="64" Grid.ColumnSpan="2" Click="Install_Click" FontFamily="Times New Roman" FontSize="21.333"/>
+        <Button x:Name="Find_Directory" Grid.Row="8" Content="Directory" Grid.Column="11" Grid.ColumnSpan="2" MinWidth="128" MinHeight="64" FontFamily="Times New Roman" FontSize="21.333" Click="Find_Directory_Click"/>
+        <Button Grid.Row="8" x:Name="PickFolderButton" Content="Pick folder" MinWidth="128" MinHeight="64" Grid.Column="8" Click="PickFolderButton_Click" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="OutputTextBlock" Text="" VerticalAlignment="Top" Grid.Row="7" Grid.Column="7" Grid.ColumnSpan="3" MinHeight="64" MinWidth="192" Height="64" UseLayoutRounding="True" Width="192" HorizontalAlignment="Left"/>
     </Grid>
 </Page>
